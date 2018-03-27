@@ -1,0 +1,1255 @@
+<div id="ftrigger" class="spacer s0 wow fadeIn"></div>
+<%
+if(designType == 'two_rows'){
+%>
+<div class="feature_2r_container feature_container text-center" data-scroll-index="0" id="feature_<%= id %>">
+    <div class="row m-0 animated fadeInDown banner_text_main_container">
+        <h1 class="feature_heading"><%= banner_heading %></h1>
+        <hr></hr>
+        <div class="row m-0">
+            <p class="feature_description_text"><%= banner_text %></p>
+        </div>
+    </div>
+    <div class="row m-0 feature_2r_images_container">
+        <img class="bg_browser_img animated zoomIn" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/<%= bg_img %>">
+        <img class="fg_browser_img animated fadeInUp" style="opacity:0" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/<%= fg_img %>">
+    </div>
+</div>
+<%
+}else if(designType == 'two_columns_custom'){
+%>
+<table class="feature_2cc_container feature_container row m-0" data-scroll-index="0" id="feature_<%= id %>">
+    <tr class="non_responsive">
+        <td class="left_container animated fadeInLeft">
+            <div class="text_container">
+                <h1 class="feature_heading"><%= banner_heading %></h1>
+                <hr></hr>
+                <p class="feature_description_text"><%= banner_text %></p>
+            </div>
+        </td>
+        <td id="app_banner_animation" class="right_container feature_2cc_images_container hide_in_phone image_container text-center animated fadeInRight">
+            <div class="app_banner_container" style="border-radius: 50%;">
+                <img class="app_banner_bg" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/banner_bg.png">
+                <img class="app_phone_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/banner_phone.png">
+                <img class="app_cloud_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/banner_cloud.png">
+            </div>
+        </td>
+    </tr>
+    <tr class="phone_responsive">
+        <td id="app_banner_animation_phone" class="right_container feature_2cc_images_container image_container text-center animated fadeInRight">
+            <div class="app_banner_container" style="border-radius: 50%;">
+                <img class="app_banner_bg" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/banner_bg.png">
+                <img class="app_phone_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/banner_phone.png">
+                <img class="app_cloud_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/banner_cloud.png">
+            </div>
+        </td>
+    </tr>
+</table>
+<%
+}else if(designType == 'two_rows_custom'){
+%>
+<div class="feature_2rc_container feature_container text-center" data-scroll-index="0" id="feature_<%= id %>">
+    <div class="row m-0 animated fadeInDown banner_text_main_container">
+        <h1 class="feature_heading"><%= banner_heading %></h1>
+        <hr></hr>
+        <div class="row m-0">
+            <p class="feature_description_text"><%= banner_text %></p>
+        </div>
+    </div>
+    <div class="row m-0 feature_2rc_images_container">
+        <img class="bg_browser_img animated zoomIn" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/<%= bg_img %>" onload="this.style.opacity='1'" data-wow-delay="0.7s">
+        <img class="fg_browser_img animated fadeInUp" onload="this.style.opacity='1'" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/<%= fg_img %>">
+        <img class="phone_fg_browser_img wow fadeInUp" onload="this.style.opacity='1'" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/<%= phone_fg_img %>">
+    </div>
+</div>
+<%
+}else if(designType == 'two_columns'){
+%>
+<table class="feature_2c_container feature_container row m-0" data-scroll-index="0" id="feature_<%= id %>">
+    <tr class="non_responsive">
+        <td class="left_container animated fadeInLeft">
+            <div class="text_container">
+                <h1 class="feature_heading"><%= banner_heading %></h1>
+                <hr></hr>
+                <p class="feature_description_text"><%= banner_text %></p>
+            </div>
+        </td>
+        <td class="right_container feature_2c_images_container image_container text-center animated fadeInRight hide_in_phone">
+            <img class="banner_img" id="banner_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/<%= img %>">
+        </td>
+    </tr>
+    <tr class="phone_responsive">
+        <td class="right_container feature_2c_images_container image_container text-center animated fadeInRight">
+            <img class="banner_img" id="banner_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/<%= img %>">
+        </td>
+    </tr>
+</table>
+<%
+}
+%>
+<%
+if(featureName == "Website"){
+%>
+<script type="text/javascript">logMXWebEvent(15946, 206,'Viewed Event Website Page', 2);</script>
+<table class="do_it_yourself_section row m-0" data-scroll-index="1">
+    <tr class="non_responsive">
+        <td class="left_container image_container">
+            <img class="diy_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/diy.png" data-wow-delay="0.3s">
+        </td>
+        <td class="right_container">
+            <div class="text_container wow fadeInRight" data-wow-delay="0.3s">
+                <h2 class="section_title">Intuitive and easy-to-use interface to create your own event!</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>A completely Do-It-Yourself platform where you just fill the event information and get stunningly beautiful website to market your event</p>
+                    <ul>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td class="bullet_1">
+                                        <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/bullet1.png">
+                                    </td>
+                                    <td>
+                                        <p class="one">No technical skills required</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td class="bullet_2">
+                                        <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/bullet2.png">
+                                    </td>
+                                    <td>
+                                        <p class="two">Fresh and contemporary interface</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td class="bullet_3">
+                                        <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/bullet1.png">
+                                    </td>
+                                    <td>
+                                        <p class="one">Easy to update</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td class="bullet_4">
+                                        <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/bullet2.png">
+                                    </td>
+                                    <td>
+                                        <p class="two">Ability to manage your speakers, sessions registrations etc.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center">
+            <img class="diy_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/diy.png" data-wow-delay="0.3s">
+        </td>
+    </tr>
+</table>
+<table class="different_themes_section row m-0" data-scroll-index="2">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft" data-wow-delay="0.5s">
+                <h2 class="section_title">Theme that reflects your brand identity</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Select a top notch theme thoughtfully crafted by event professionals and get a feel of having a custom made website</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="different_themes_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/different_themes.png" data-wow-delay="0.5s">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="different_themes_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/different_themes.png" data-wow-delay="0.5s">
+        </td>
+    </tr>
+</table>
+<div class="merged_section">
+    <table data-scroll-index="3">
+        <tr class="custom_domain_section row m-0 non_responsive">
+            <td class="left_container image_container text-center">
+                <img class="custom_domain_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/custom_domain.png" data-wow-delay="0.5s">
+            </td>
+            <td class="right_container">
+                <div class="text_container wow fadeInRight" data-wow-delay="0.5s">
+                    <h2 class="section_title">Give it your name</h2>
+                    <hr></hr>
+                    <div class="section_description">
+                        <p>Host the event website on your own event's domain name, giving your attendees a personalised experience</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="only_phone_responsive">
+            <td class="left_container image_container text-center">
+                <img class="custom_domain_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/custom_domain.png" data-wow-delay="0.5s">
+            </td>
+        </tr>
+    </table>
+    <div class="responsive_section row m-0" data-scroll-index="4">
+        <div class="text_container text-center wow fadeInDown" data-wow-delay="0.5s">
+            <h2 class="section_title">Responsive and dynamic layout</h2>
+            <hr></hr>
+            <div class="section_description">
+                <p>Your event website is compatible across multiple devices without any technical efforts at your end</p>
+            </div>
+        </div>
+        <div class="left_container image_container text-center">
+            <img class="responsive_img wow fadeInUp" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/responsive.png" data-wow-delay="0.5s">
+        </div>
+    </div>
+</div>
+<table class="analytics_section row m-0" data-scroll-index="5">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft" data-wow-delay="0.5s">
+                <h2 class="section_title">What gets measured, gets managed</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Get powerful analytics of your event website and visitors to get a better understanding of your event progress</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="analytics_website_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/analytics_website.png" data-wow-delay="0.5s">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="analytics_website_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/website/analytics_website.png" data-wow-delay="0.5s">
+        </td>
+    </tr>
+</table>
+<%
+}else if(featureName == "App"){
+%>
+<script type="text/javascript">logMXWebEvent(15946, 207,'View Event App Page', 2);</script>
+<div class="autogenerated_app_section" data-scroll-index="1">
+    <div class="text_container text-center">
+        <h2 class="section_title">Like website like app</h2>
+        <hr></hr>
+        <div class="section_description">
+            <p>Make your application look exactly like your website and give your audience a similar experience across both the platforms.</p>
+        </div>
+    </div>
+    <div class="wow fadeIn row m-0" id="svg_animation_div">
+        <div class="row m-0">
+            <div class="left_section text-center">
+                <img class="website" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/website.png">
+            </div>
+            <div class="right_section text-center">
+                <img class="only_phone" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/phone_only.png">
+                <img class="only_screen" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/overlay_screen.png">
+            </div>
+        </div>
+        <img class="flow_line normal_view" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/flow_line.png">
+        <svg class="first paralax on" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 350 69" style="enable-background:new 0 0 350 69;" xml:space="preserve">
+            <path id="XMLID_2_" class="st0" d="M350,66.5H46.6c-22,0-44-21.5-44-43.5V0"/>
+        </svg>
+    </div>
+    <div class="row m-0 only_phone_responsive">
+        <img class="app_complete" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/complete.png">
+    </div>
+</div>
+<table class="custom_app_section row m-0" data-scroll-index="2">
+    <tr class="non_responsive">
+        <td class="left_container image_container text-center">
+            <img class="custom_app_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/custom_app.png">
+        </td>
+        <td class="right_container">
+            <div class="text_container wow fadeInRight">
+                <h2 class="section_title">Easily changable look and experience</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>No need to run circles around the designers to make changes every now and then. You can DIY on this platform.</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center">
+            <img class="custom_app_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/custom_app.png">
+        </td>
+    </tr>
+</table>
+<table class="integrated_networking_platform_section row m-0" data-scroll-index="3">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Networking made easy</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Biggest ROI for attendees is networking. Provide your attendees with the splendid community features of the networking platform, ensuring a worthwhile experience to them.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="integrated_networking_platform_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/integrated_networking_platform.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="integrated_networking_platform_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/integrated_networking_platform.png">
+        </td>
+    </tr>
+</table>
+<table class="app_analytics_section row m-0" data-scroll-index="4">
+    <tr class="non_responsive">
+        <td class="left_container image_container text-center">
+            <img class="custom_app_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/analytics.png">
+        </td>
+        <td class="right_container">
+            <div class="text_container wow fadeInRight">
+                <h2 class="section_title">Plan your way ahead</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Beautiful analytics that help to scoop out insights from huge data</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center">
+            <img class="custom_app_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/analytics.png">
+        </td>
+    </tr>
+</table>
+<%
+}else if(featureName == "Email"){
+%>
+<script type="text/javascript">logMXWebEvent(15946, 208,'Viewed Promotion Emails Page', 2);</script>
+<div class="autogenerated_email_section" data-scroll-index="1">
+    <div class="text_container text-center">
+        <h2 class="section_title">Auto Generated mailers</h2>
+        <hr></hr>
+        <div class="section_description">
+            <p>Target the right people with the smartest of mails without having to go through the grind of framing the mail each time. They are autogenerated!</p>
+        </div>
+    </div>
+    <div class="wow fadeIn row m-0" id="email_svg_animation_div">
+        <div class="row m-0">
+            <table class="autogenerated_email_img_container">
+                <tr>
+                    <td class="left_section text-center">
+                        <img class="website_topbar_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/browser_topbar.jpg">
+                        <div class="website_static_container">
+                            <img class="website_static" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/website_static.jpg">
+                            <img class="website_full" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/website_full.png">
+                        </div>
+                    </td>
+                    <td class="right_section text-center">
+                        <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/2.png" class="mailbox_screen" data-wow-duration="9s">
+                        <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/3.png" class="mailbox_back">
+                        <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/1.png" class="mailbox_front">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <img class="flow_line normal_view" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/app/flow_line.png">
+        <svg class="first paralax on" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 350 69" style="enable-background:new 0 0 350 69;" xml:space="preserve">
+            <path id="XMLID_2_" class="st0" d="M350,66.5H46.6c-22,0-44-21.5-44-43.5V0"/>
+        </svg>
+    </div>
+    <div class="row m-0 only_phone_responsive">
+        <img class="email_complete" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/complete.png">
+    </div>
+</div>
+<table class="custom_branding_section row m-0" data-scroll-index="2">
+    <tr class="non_responsive">
+        <td class="left_container image_container text-center">
+            <img class="custom_branding_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/custom_branding.png">
+        </td>
+        <td class="right_container">
+            <div class="text_container wow fadeInRight">
+                <h2 class="section_title">Brand it your way</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Customised branding options available to help your audience connect with you better.</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center">
+            <img class="custom_branding_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/custom_branding.png">
+        </td>
+    </tr>
+</table>
+<div class="templates_section row m-0" data-scroll-index="3">
+    <div class="text_container text-center wow fadeInDown">
+        <h2 class="section_title">Emails that manifest your identity</h2>
+        <hr></hr>
+        <div class="section_description">
+            <p>Choose from a repository of attractive themes to convey your message, keeping your brand identity in mind and attract the mass.</p>
+        </div>
+    </div>
+    <div class="image_container text-center wow fadeInUp">
+        <img class="templates_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/bg_templates.png">
+        <div class="interactive_container">
+            <div class="left_container">
+                <div class="block block_1" id="1">
+                    <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/select_button.png">
+                </div>
+                <div class="block block_2" id="2">
+                    <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/select_button.png">
+                </div>
+                <div class="block block_3" id="3">
+                    <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/select_button.png">
+                </div>
+                <div class="block block_4" id="4">
+                    <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/select_button.png">
+                </div>
+            </div>
+            <div class="right_container">
+                <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/theme_1.png">
+            </div>
+        </div>
+    </div>
+</div>
+<table class="email_analytics_section row m-0" data-scroll-index="4">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInRight">
+                <h2 class="section_title">Keep a track of the mails</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Get detailed analytics of the mailing campaigns to determine if they have been a success and the amount of impact created by them.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="email_analytics_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/analytics.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="email_analytics_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/analytics.png">
+        </td>
+    </tr>
+</table>
+<%
+}else if(featureName == "DigitalMarketing"){
+%>
+<script type="text/javascript">logMXWebEvent(15946, 209,'Viewed Digital Posts Page', 2);</script>
+<div class="autogenerated_social_section" data-scroll-index="1">
+    <div class="text_container text-center">
+        <h2 class="section_title">Auto-generated social media posts</h2>
+        <hr></hr>
+        <div class="section_description">
+            <p>Get sharp and precise social media posts loaded with graphics and personalized text to attract the audience.</p>
+        </div>
+    </div>
+    <div class="wow fadeIn row m-0" id="social_svg_animation_div">
+        <div class="row m-0">
+            <table class="autogenerated_social_img_container">
+                <tr>
+                    <td class="left_section text-center">
+                        <img class="browser_topbar_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/email/browser_topbar.jpg">
+                        <div class="website_static_container">
+                            <img class="browser_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/browser.png">
+                        </div>
+                    </td>
+                    <td class="right_section text-center">
+                        <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/post.png" class="fb_post">
+                        <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/fb_bg.png" class="facebook_bg">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <img class="flow_line normal_view" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/green_pipe.png">
+        <svg class="first paralax on" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 367 91" style="enable-background:new 0 0 367 91;" xml:space="preserve">
+            <path class="st0" d="M361.4,0v29.6c0,28.3-23.1,53.4-51.4,53.4H58.4C30.1,83,7,57.9,7,29.6V0"/>
+        </svg>
+    </div>
+    <div class="row m-0 only_phone_responsive">
+        <img class="social_complete" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/complete.png">
+    </div>
+</div>
+<table class="scheduling_section row m-0" data-scroll-index="2">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Scheduling to your rescue</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Don't let social media take a back seat amidst your busy routine. Schedule the posts on your dashboard timeline and it is ensured that they are posted to your registered social media account at the scheduled time.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <!-- <img class="scheduling_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/scheduling.png"> -->
+            <img class="scheduling_img scheduling_img_1 wow fadeIn offsetme50" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/1.png">
+            <img class="scheduling_img scheduling_img_2 wow fadeInLeft offsetme50" data-wow-delay="0.4s" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/2.png">
+            <img class="scheduling_img scheduling_img_3 wow fadeInRight offsetme50" data-wow-delay="0.4s" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/3.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="scheduling_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/scheduling.png">
+        </td>
+    </tr>
+</table>
+<table class="google_ads_section row m-0" data-scroll-index="3">
+    <tr class="non_responsive">
+        <td class="left_container image_container text-center">
+            <img class="ga_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/ga.png">
+            <img class="ga_img_part wow fadeIn offsetme50" data-wow-delay="1.2s" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/ga_part.png">
+        </td>
+        <td class="right_container">
+            <div class="text_container wow fadeInRight">
+                <h2 class="section_title">Create Google ads in 3 simple steps</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Publish your Google ads from your event dashboard and monitor the performance of these ads, all in one place.</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center">
+          <img class="ga_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/ga.png">
+          <img class="ga_img_part wow fadeIn offsetme50" data-wow-delay="1.2s" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/ga_part.png">
+        </td>
+    </tr>
+</table>
+<table class="digital_marketing_analytics_section row m-0" data-scroll-index="4">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Get a peek into social media metrics</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Track which post is performing well for your event. Get detailed insights on post reach, clicks, reactions and measure the success of your promotional activities.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="digital_marketing_analytics_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/analytics.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="digital_marketing_analytics_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/digital_marketing/analytics.png">
+        </td>
+    </tr>
+</table>
+<%
+}else if(featureName == "CustomForms"){
+%>
+<script type="text/javascript">logMXWebEvent(15946, 210,'Viewed Custom Forms', 2);</script>
+<table class="custom_domain_form_section row m-0" data-scroll-index="1">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Your Event, Your Registration Form, Your Domain</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>No need of any external integrations for the registration form. Now your registration form will be hosted on your domain name.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="custom_domain_form_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/custom_form/custom_domain_form.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="custom_domain_form_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/custom_form/custom_domain_form.png">
+        </td>
+    </tr>
+</table>
+<div class="registered_db_section row m-0" data-scroll-index="2">
+    <div class="text_container text-center wow fadeInDown">
+        <h2 class="section_title">No pain, only Gain - Registered Database</h2>
+        <hr></hr>
+        <div class="section_description">
+            <p>Get a consolidated list of all the registered participants with their information automatically updated and structured for your instant use</p>
+        </div>
+    </div>
+    <div class="image_container text-center">
+        <img class="registered_db_img wow fadeInUp" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/custom_form/registered_db.png">
+    </div>
+</div>
+<table class="export_types_form_section row m-0" data-scroll-index="1">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Maintain your database without any hassle</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Download a CSV or PDF file for the entire registered database at any point of time.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="custom_domain_form_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/custom_form/export_types.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="custom_domain_form_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/custom_form/export_types.png">
+        </td>
+    </tr>
+</table>
+<table class="custom_form_analytics_section row m-0" data-scroll-index="3">
+    <tr class="non_responsive">
+        <td class="left_container image_container text-center">
+            <img class="custom_app_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/custom_form/analytics.png">
+        </td>
+        <td class="right_container">
+            <div class="text_container wow fadeInRight">
+                <h2 class="section_title">On point event reporting</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Get the registrants and transaction details in an auto generated analytics report on a daily basis and be up-to-date with the progress of your event registrations</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center">
+            <img class="custom_app_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/custom_form/analytics.png">
+        </td>
+    </tr>
+</table>
+<%
+}else if(featureName == "Ticketing"){
+%>
+<script type="text/javascript">logMXWebEvent(15946, 211,'Viewed Ticketing Page', 2);</script>
+<table class="custom_domain_ticketing_section row m-0" data-scroll-index="1">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Sell Tickets on your own Domain Name</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Don't redirect your attendees to any other site for the event registrations, get your ticketing widget integrated within the event website.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="custom_domain_ticketing_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/ticketing/custom_domain_ticketing.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="custom_domain_ticketing_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/ticketing/custom_domain_ticketing.png">
+        </td>
+    </tr>
+</table>
+<table class="networking_platform_section row m-0" data-scroll-index="2">
+    <tr class="non_responsive">
+        <td class="left_container image_container text-center">
+            <img class="networking_platform_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/ticketing/networking_platform.png">
+        </td>
+        <td class="right_container">
+            <div class="text_container wow fadeInRight">
+                <h2 class="section_title">Gateway to the Event Community</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>As soon as your attendee buys the event ticket, he/she is entered in the event community ensuring all the attendees inside the networking platform.</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center">
+            <img class="networking_platform_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/ticketing/networking_platform.png">
+        </td>
+    </tr>
+</table>
+<div class="ticketing_3c_section row m-0" data-scroll-index="3">
+    <div class="ticket_type_section col-xs-12 col-sm-4 section m-0">
+        <div class="text_container text-center wow fadeInDown">
+            <h3>Ticketing Types</h3>
+            <hr></hr>
+            <p>Create a galore of ticket types</p>
+        </div>
+        <div class="image_container text-center">
+            <img class="ticket_type_img wow fadeInUp" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/ticketing/ticket_type.png">
+        </div>
+    </div>
+    <div class="ticket_offer_section col-xs-12 col-sm-4 section m-0">
+        <div class="text_container text-center wow fadeInDown">
+            <h3>Ticket Offers</h3>
+            <hr></hr>
+            <p>Give your attendees options for more participation</p>
+        </div>
+        <div class="image_container text-center">
+            <img class="ticket_offer_img wow fadeInUp" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/ticketing/ticket_offer.png">
+        </div>
+    </div>
+    <div class="ticket_expiry_section col-xs-12 col-sm-4 section m-0">
+        <div class="text_container text-center wow fadeInDown">
+            <h3>Put a clock</h3>
+            <hr></hr>
+            <p>Customise the dates and set an expiry</p>
+        </div>
+        <div class="image_container text-center">
+            <img class="ticket_expiry_img wow fadeInUp" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/ticketing/ticket_expiry.png">
+        </div>
+    </div>
+</div>
+<table class="analytics_section row m-0" data-scroll-index="4">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft" data-wow-delay="0.5s">
+                <h2 class="section_title">On point event reporting</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Get the registrants and transaction details in an auto generated analytics report on a daily basis and be up-to-date with the progress of your event registrations</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="analytics_website_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/ticketing/analytics.png" data-wow-delay="0.5s">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="analytics_website_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/ticketing/analytics.png" data-wow-delay="0.5s">
+        </td>
+    </tr>
+</table>
+
+<%
+}else if(featureName == "Networking"){
+%>
+<script type="text/javascript">logMXWebEvent(15946, 212,'Viewed Networking Page', 2);</script>
+<table class="custom_domain_networking_section row m-0" data-scroll-index="1">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">And all of this is on your own Domain</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Get the networking platform integrated on your event website, building a social platform for the attendees on your own domain name.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="custom_domain_networking_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/custom_domain_networking.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="custom_domain_networking_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/custom_domain_networking.png">
+        </td>
+    </tr>
+</table>
+<div class="view_profile_section row m-0" data-scroll-index="2">
+    <div class="text_container text-center wow fadeInDown">
+        <h2 class="section_title">Spot the right people</h2>
+        <hr></hr>
+        <div class="section_description">
+            <p>Attendees are able to filter the people of their interest and view their detailed profiles to spark up a conversation or pre fix a meeting at the event.</p>
+        </div>
+    </div>
+    <div class="image_container text-center">
+        <img class="view_profile_img wow fadeInUp" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/view_profile.png">
+    </div>
+</div>
+<table class="send_messages_section row m-0" data-scroll-index="3">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Attendees build fruitful connections</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Registered participants can communicate within the community through in-app messaging on the networking platform</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="send_messages_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/send_messages.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="send_messages_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/send_messages.png">
+        </td>
+    </tr>
+</table>
+<div class="networking_3c_section row m-0" data-scroll-index="4">
+    <div class="discussion_forum_section col-xs-12 col-sm-4 section m-0">
+        <div class="text_container text-center wow fadeInDown">
+            <h3>Create discussion forums</h3>
+            <hr></hr>
+            <p>Let your attendees start discussion forums to initiate engagement and create a buzz of the event</p>
+        </div>
+        <div class="image_container text-center">
+            <img class="discussion_forum_img wow fadeInUp" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/discussion_forum.png">
+        </div>
+    </div>
+    <div class="meeting_section col-xs-12 col-sm-4 section m-0">
+        <div class="text_container text-center wow fadeInDown">
+            <h3>Setting up Meeting dates</h3>
+            <hr></hr>
+            <p>Pre fix a meeting with someone at the event, maximizing the attendee's event ROI and overall experience</p>
+        </div>
+        <div class="image_container text-center">
+            <img class="meeting_img wow fadeInUp" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/meeting.png">
+        </div>
+    </div>
+    <div class="polls_section col-xs-12 col-sm-4 section m-0">
+        <div class="text_container text-center wow fadeInDown">
+            <h3>Create Polls</h3>
+            <hr></hr>
+            <p>Easy to create and customisable polls for your attendees to engage</p>
+        </div>
+        <div class="image_container text-center">
+            <img class="polls_img wow fadeInUp" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/polls.png">
+        </div>
+    </div>
+</div>
+<table class="networking_analytics_section row m-0" data-scroll-index="5">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Crucial data before, during and after the event</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Monitor the engagement of your event attendees at each point to keep up the spark of the event</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="send_messages_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/analytics.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="send_messages_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/networking/analytics.png">
+        </td>
+    </tr>
+</table>
+<%
+}else if(featureName == "AttendeeEngagement"){
+%>
+<!-- <div class="notification_engagement_text_container text-center">
+    <h2 class="section_title">Real-time Communication and Notifications</h2>
+    <hr></hr>
+    <div class="section_description">
+        <p class="m-0">Communicate the vital information regarding the event and engage with your attendees in real-time through push notifications.</p>
+    </div>
+</div>
+<table class="notification_engagement">
+    <tr class="w-100">
+        <td class="icons_container w-40">
+            <div class="row m-0 text-center">
+                <img id="inapp_notification" class="notification_icon" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/click_1.png" no="1">
+                <span>IN-APP</span>
+            </div>
+            <div class="row m-0 text-center">
+                <img id="push_notification" class="notification_icon" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/2.png" no="2">
+                <span>PUSH</span>
+            </div>
+            <div class="row m-0 text-center">
+                <img id="email_notification" class="notification_icon" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/3.png" no="3">
+                <span>EMAIL</span>
+            </div>
+        </td>
+        <td class="notifications_images_container text-center">
+            <img class="seen" id="inapp_notification_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/inapp_notifications.png" style="display:inline;">
+            <img id="push_notification_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/push_notifications.png">
+            <img id="email_notification_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/email_notifications.png">
+        </td>
+    </tr>
+</table> -->
+<table class="create_pAndDf_section row m-0" data-scroll-index="1">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Create the Buzz</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Create quick simple and easily customisable polls for your attendees, in order to stay connected with your audience and leverage the platform for data collection.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="create_pAndDf_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/create_pAndDf.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="create_pAndDf_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/create_pAndDf.png">
+        </td>
+    </tr>
+</table>
+<table class="feedback_section row m-0" data-scroll-index="2">
+    <tr class="non_responsive">
+        <td class="left_container image_container text-center">
+            <img class="feedback_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/feedback.png">
+        </td>
+        <td class="right_container">
+            <div class="text_container wow fadeInRight">
+                <h2 class="section_title">Valuable feedback</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Design your own survey and send it to your attendees to gauge the overall feedback to help you continue the journey</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center">
+            <img class="feedback_img wow fadeInLeft" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/feedback.png">
+        </td>
+    </tr>
+</table>
+<table class="engagement_analytics_section row m-0" data-scroll-index="3">
+    <tr class="non_responsive">
+        <td class="left_container">
+            <div class="text_container wow fadeInLeft">
+                <h2 class="section_title">Analyse your every move</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Track what's creating user engagement over Hubilo community and changing over timeAfter all everyone except god needs data to support their statement.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center">
+            <img class="engagement_analytics_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/analytics.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center">
+            <img class="engagement_analytics_img wow fadeInRight" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/engagement/analytics.png">
+        </td>
+    </tr>
+</table>
+<%
+}else if(featureName == "Analytics"){
+%>
+<script type="text/javascript">logMXWebEvent(15946, 213,'Viewed Analytics Page', 2);</script>
+<table class="promotion_section row m-0" data-scroll-index="1">
+    <tr class="non_responsive">
+        <td class="left_container text-contianer wow fadeInLeft">
+            <div class="text_container">
+                <h2 class="section_title">Visually Enhanced Promotions Performance Report</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Make smarter decisions regarding your promotion strategies by having full account of the performance of your facebook posts and email campaigns right on your dashboard.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center wow fadeInRight">
+            <img class="promotions_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/promotions_analatyics.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center wow fadeInRight">
+            <img class="promotions_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/promotions_analatyics.png">
+        </td>
+    </tr>
+</table>
+<table class="visit_tracker_section row m-0" data-scroll-index="2">
+    <tr class="non_responsive">
+        <td class="left_container image_container text-center wow fadeInLeft">
+            <img class="visits_tracker_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/visits_tracker.png">
+        </td>
+        <td class="right_container text-contianer wow fadeInRight">
+            <div class="text_container">
+                <h2 class="section_title">Track what's bringing users to your website.</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Website analytics helps you understand the audience that is visiting your website, their interest in various elements of your event (by the click ratio) and also helps you decipher the geographical, technological and demographical division in your audience.</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center wow fadeInLeft">
+            <img class="visits_tracker_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/visits_tracker.png">
+        </td>
+    </tr>
+</table>
+<table class="ticket_step_section row m-0" data-scroll-index="3">
+    <tr class="non_responsive">
+        <td class="left_container text-contianer wow fadeInLeft">
+            <div class="text_container">
+                <h2 class="section_title">Boost and analyse your Ticket Revenue tracking step-to-step drop off.</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Get daily reports on registartions recieved for each ticket type with transcation details, making it hassle free to keep tabs on the revenue and audience. Boost and analyse your Ticket Revenue tracking step-to-step drop off.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center wow fadeInRight">
+            <img class="ticket_step_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/ticket_step.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center wow fadeInRight">
+            <img class="ticket_step_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/ticket_step.png">
+        </td>
+    </tr>
+</table>
+<hr class="separator_line"></hr>
+<table class="engage_analytics_section row m-0" data-scroll-index="4">
+    <tr class="non_responsive">
+        <td class="left_container image_container text-center wow fadeInLeft">
+            <img class="engage_analytics_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/engage_analytics.png">
+        </td>
+        <td class="right_container text-contianer wow fadeInRight">
+            <div class="text_container">
+                <h2 class="section_title">Track what's creating user engagement over Hubilo community and changing over time</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Account the growth of the community by keeping a track of the discussion forums, polls, page views etc.</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="left_container image_container text-center wow fadeInLeft">
+            <img class="engage_analytics_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/engage_analytics.png">
+        </td>
+    </tr>
+</table>
+<table class="funnel_graphic_section row m-0" data-scroll-index="5">
+    <tr class="non_responsive">
+        <td class="left_container text-contianer wow fadeInLeft">
+            <div class="text_container">
+                <h2 class="section_title">Measure the success of your event.</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Get a consolidated report for each module beautifully structured for your easy analysation</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center wow fadeInRight">
+            <img class="funnel_graphic_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/funnel_graphic.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center wow fadeInRight">
+            <img class="funnel_graphic_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/analytics/funnel_graphic.png">
+        </td>
+    </tr>
+</table>
+<%
+}else if(featureName == "EventComparison"){
+%>
+<div class="comparing_events_section row m-0" data-scroll-index="1">
+    <div class="text_container text-center wow fadeInDown">
+        <h2 class="section_title">Measure the success of your event</h2>
+        <hr></hr>
+        <div class="section_description">
+            <p>After doing multiple events on Hubilo, compare the data across events to find out what's working for the event's success to be able to replicate it for the upcoming events</p>
+        </div>
+    </div>
+    <div class="image_container text-center wow fadeInUp">
+        <img class="comparing_events_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/comparison/comparing_events.png">
+    </div>
+</div>
+<table class="combine_events_section row m-0" data-scroll-index="2">
+    <tr class="non_responsive">
+        <td class="left_container wow fadeInLeft">
+            <div class="text_container">
+                <h2 class="section_title">Your text here</h2>
+                <hr></hr>
+                <div class="section_description">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+        </td>
+        <td class="right_container image_container text-center wow fadeInRight">
+            <img class="combine_events_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/comparison/combine_events.png">
+        </td>
+    </tr>
+    <tr class="only_phone_responsive">
+        <td class="right_container image_container text-center wow fadeInRight">
+            <img class="combine_events_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/comparison/combine_events.png">
+        </td>
+    </tr>
+</table>
+<table class="database_aggregation_section row m-0" data-scroll-index="3">
+    <tr class="non_responsive">
+        <div class="database_aggregation_text_container text_container text-center wow fadeInDown">
+            <h2 class="section_title">Your text here</h2>
+            <hr></hr>
+            <div class="section_description">
+                <p>Collaborate your database for all the stakeholders, viz; attendees, speakers, sponsors and exhibitors across multiple events into one place and sort according to your organisational needs.</p>
+            </div>
+        </div>
+    </tr>
+    <tr>
+        <td class="wow fadeIn">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/comparison/2.png">
+        </td>
+        <td class="wow fadeIn">
+            <img class="plus_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/comparison/4.png">
+        </td>
+        <td class="wow fadeIn">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/comparison/3.png">
+        </td>
+        <td class="wow fadeIn">
+            <img class="equal_img" src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/comparison/5.png">
+        </td>
+        <td class="wow fadeIn">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/features/comparison/1.png">
+        </td>
+    </tr>
+</table>
+<%
+}
+%>
+<div class="common_navigator_main_section" id="f_<%= id %>">
+  <div class="section_title">
+    <h2>Transforming events into happening hubs</h2>
+    <hr></hr>
+  </div>
+  <div class="common_navigator_main_container">
+    <figure class="individual_feature_box_figure">
+        <div class="individual_feature_box">
+          <div class="img_container">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/nav/website_h.png">
+          </div>
+          <div class="text_container">
+            <p>Event Website</p>
+          </div>
+        </div>
+        <figcaption>
+          <a href="#features/1"><button class="feature_view_in_detail_btn" id="feature_view_in_detail_btn_1">View in detail</button></a>
+        </figcaption>
+    </figure>
+    <figure class="individual_feature_box_figure">
+        <div class="individual_feature_box">
+          <div class="img_container">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/nav/app_h.png">
+          </div>
+          <div class="text_container">
+            <p>Event App</p>
+          </div>
+        </div>
+        <figcaption>
+          <a href="#features/2"><button class="feature_view_in_detail_btn" id="feature_view_in_detail_btn_2">View in detail</button></a>
+        </figcaption>
+    </figure>
+    <figure class="individual_feature_box_figure">
+        <div class="individual_feature_box">
+          <div class="img_container">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/nav/email_h.png">
+          </div>
+          <div class="text_container">
+            <p>Email Campaigns</p>
+          </div>
+        </div>
+        <figcaption>
+          <a href="#features/3"><button class="feature_view_in_detail_btn" id="feature_view_in_detail_btn_3">View in detail</button></a>
+        </figcaption>
+    </figure>
+    <figure class="individual_feature_box_figure">
+        <div class="individual_feature_box">
+          <div class="img_container">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/nav/digital_marketing_h.png">
+          </div>
+          <div class="text_container">
+            <p>Social Media Posts</p>
+          </div>
+        </div>
+        <figcaption>
+          <a href="#features/4"><button class="feature_view_in_detail_btn" id="feature_view_in_detail_btn_4">View in detail</button></a>
+        </figcaption>
+    </figure>
+    <figure class="individual_feature_box_figure">
+        <div class="individual_feature_box">
+          <div class="img_container">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/nav/custom_form_h.png">
+          </div>
+          <div class="text_container">
+            <p>Custom Forms</p>
+          </div>
+        </div>
+        <figcaption>
+          <a href="#features/5"><button class="feature_view_in_detail_btn" id="feature_view_in_detail_btn_5">View in detail</button></a>
+        </figcaption>
+    </figure>
+    <figure class="individual_feature_box_figure">
+        <div class="individual_feature_box">
+          <div class="img_container">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/nav/ticketing_h.png">
+          </div>
+          <div class="text_container">
+            <p>Ticketing</p>
+          </div>
+        </div>
+        <figcaption>
+          <a href="#features/6"><button class="feature_view_in_detail_btn" id="feature_view_in_detail_btn_6">View in detail</button></a>
+        </figcaption>
+    </figure>
+    <figure class="individual_feature_box_figure">
+        <div class="individual_feature_box">
+          <div class="img_container">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/nav/networking_h.png">
+          </div>
+          <div class="text_container">
+            <p>Networking</p>
+          </div>
+        </div>
+        <figcaption>
+          <a href="#features/7"><button class="feature_view_in_detail_btn" id="feature_view_in_detail_btn_7">View in detail</button></a>
+        </figcaption>
+    </figure>
+    <figure class="individual_feature_box_figure">
+        <div class="individual_feature_box">
+          <div class="img_container">
+            <img src="http://static-o4mlunccwnbtnhr.stackpathdns.com/pics/nav/analytics_h.png">
+          </div>
+          <div class="text_container">
+            <p>Analytics</p>
+          </div>
+        </div>
+        <figcaption>
+          <a href="#features/8"><button class="feature_view_in_detail_btn" id="feature_view_in_detail_btn_8">View in detail</button></a>
+        </figcaption>
+    </figure>
+  </div>
+</div>
+<div class="pre_footer_request_demo_container" id="normalView">
+  <table class="pre_footer_request_demo">
+    <tr>
+      <td class="text_column">
+        <p>Brew the perfect recipe for your event!</p>
+      </td>
+      <td class="button_column">
+        <a href="#requestdemo"><button class="request_demo_button btn-default">Request Demo</button></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="pre_footer_request_demo_container" id="phoneView">
+  <table class="pre_footer_request_demo">
+    <tr>
+      <td class="text_column">
+        <p>Brew the perfect recipe for your event!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="button_column">
+        <a href="#requestdemo"><button class="request_demo_button btn-default">Request Demo</button></a>
+      </td>
+    </tr>
+  </table>
+</div>
